@@ -206,3 +206,20 @@ function f() {
 a = 20;
 
 f(); //20
+
+// Задача 10
+
+const array = [
+    { name: 'width', value: 123 },
+    { name: 'height', value: 222 }
+];
+
+const result = {};
+
+for (let i = 0; i < array.length; i++) {
+    result[array[i].name] = array[i].value;
+}
+
+console.log(result); 
+
+// Задача 11
