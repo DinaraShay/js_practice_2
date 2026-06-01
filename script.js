@@ -223,3 +223,27 @@ for (let i = 0; i < array.length; i++) {
 console.log(result); 
 
 // Задача 11
+
+const products = [
+  { name: "Phone", category: "Electronics" },
+  { name: "TV", category: "Electronics" },
+  { name: "Jeans", category: "Clothing" },
+  { name: "T-shirt", category: "Clothing" },
+  { name: "Blender", category: "Home" }
+];
+
+function countByCategory(products) {
+  let counts = {};
+  for(let i=0;i<products.length; i++) {
+    let category = products[i].category;
+    if (counts[category] === undefined) {
+    counts[category] = 1;
+    } else {
+        counts[category]++;
+    }
+  }
+  return counts; 
+}
+
+const result = countByCategory(products);
+console.log(result);
