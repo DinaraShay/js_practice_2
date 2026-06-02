@@ -247,3 +247,26 @@ function countByCategory(products) {
 
 const result = countByCategory(products);
 console.log(result);
+
+// Задача 12
+function getTotalSalary(obj) {
+    let values = Object.values(obj);
+    let sum = values.reduce(function(acc, cur) {
+        return acc + cur;
+    }, 0);
+    return sum;
+}
+
+// Задача 13
+var createCounter = function(n) {
+    let count = n;
+    return function() {
+        let current = count;
+        count = count + 1;
+        return current;
+    };
+};
+
+// Задача 14
+
+не смогла решить
