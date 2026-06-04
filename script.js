@@ -277,4 +277,64 @@ var createCounter = function(n) {
 
 // Задача 14
 
- 
+не смогла решить
+
+ //Задача 1 темы Map и Set
+
+countWords("яблоко банан яблоко")  
+// Map { 'яблоко' => 2, 'банан' => 1 }
+function countWords(str) {
+let words = str.split(' ');
+let map = new Map();
+
+  for (let i = 0; i< words.length; i++)  {
+    let word = words[i];
+  }
+}
+
+ //Задача 2 темы Map и Set
+
+getCategories([
+  { name: 'Молоко', category: 'Продукты' },
+  { name: 'Сыр', category: 'Продукты' },
+  { name: 'Шампунь', category: 'Косметика' }
+])
+
+function getCategories(cat) {
+  let category = new Set();
+  for(let n of cat) {
+    category.add(n.category)
+  }
+  return category;
+}
+
+//Задача 3 темы Map и Set
+
+intersection(new Set([1, 2, 3]), new Set([2, 3, 4]))  
+// Set { 2, 3 }
+
+
+function intersection(setA, setB) {
+  let result = new Set();
+
+  for(let n of setA) {
+    if(setB.has(n)) {
+      result.add(n);
+    }
+  }
+  return result
+}
+
+
+//Задача 4 темы Map и Set
+findFirstDuplicate([2, 5, 1, 2, 3])  
+// 2
+
+function findFirstDuplicate(item) {
+  let set = new Set(item);
+
+  for(let n of item) {
+    n.
+  }
+
+}
