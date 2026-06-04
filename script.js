@@ -331,10 +331,36 @@ findFirstDuplicate([2, 5, 1, 2, 3])
 // 2
 
 function findFirstDuplicate(item) {
-  let set = new Set(item);
+  let set = new Set();
 
   for(let n of item) {
-    n.
+    if(set.has(n)) {
+      return n;
+    } else {
+      set.add(n);
+    }
   }
+}
+
+
+//Задача 5 темы Map и Set
+groupByLength(['кот', 'собака', 'дом', 'машина'])
+// Map { 3 => ['кот', 'дом'], 6 => ['собака', 'машина'] }
+
+function groupByLength() {
 
 }
+ не смогла решить 
+
+//Задача 6 темы Map и Set
+
+uniqueArray([3, 1, 3, 2, 1])  
+// [3, 1, 2]
+
+function uniqueArray(count) {
+  let set = new Set(count);
+  // let array = [...set];
+  let array = Array.from(set);
+  return array
+}
+console.log(uniqueArray([3, 1, 3, 2, 1]))
